@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { PostsListComponent } from './components/posts-list/posts-list.component';
 import { PostsListService } from './services/posts-list.service';
 import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -15,7 +16,7 @@ import { HttpModule } from '@angular/http';
   ],
   imports: [
     BrowserModule,
-    HttpModule
+    HttpClientModule
   ],
   providers: [
     PostsListService
