@@ -1,0 +1,20 @@
+<div class="panel panel-primary">
+<table class="table table-hover table-bordered">
+  <thead>
+  <tr>
+    <th>id</th>
+    <th>user id</th>
+    <th>Title</th>
+    <th>Body</th>
+  </tr>
+</thead>
+  <tbody>
+    <tr *ngFor='let p of postList'>
+      <td>{{p.id}}</td>
+      <td>{{p.userId}}</td>
+      <td>{{p.title}}</td>
+      <td>{{p.body}}</td>
+    </tr>
+  </tbody>
+</table>
+</div>
